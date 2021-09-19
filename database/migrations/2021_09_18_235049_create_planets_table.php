@@ -17,8 +17,8 @@ class CreatePlanetsTable extends Migration
             $table->increments('id');
             $table->string('name_ja');
             $table->string('name_en');
-            $table->integer('radius_km');
-            $table->biginteger('weight');
+            $table->unsignedInteger('radius_km');
+            $table->unsignedBiginteger('weight');
             $table->timestamps();
         });
     }
