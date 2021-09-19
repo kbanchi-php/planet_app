@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/planets');
 });
+
+Route::resource('planets', App\Http\Controllers\PlanetController::class);
